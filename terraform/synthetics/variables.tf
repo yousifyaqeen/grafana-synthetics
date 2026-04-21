@@ -13,7 +13,7 @@ variable "sm_access_token" {
 variable "alert_notification_email" {
   description = "Email address for synthetic monitoring alerts"
   type        = string
-  default     = "platform-team@company.com"
+  default     = "yoyox98@gmail.com"
 }
 
 variable "reachability_threshold" {
