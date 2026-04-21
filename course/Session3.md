@@ -727,6 +727,7 @@ To test the workflow:
 
 ## Best Practices for Terraform and Grafana Synthetics
 
+
 ### Organizing Your Terraform Code
 
 - Use modules for reusable check configurations

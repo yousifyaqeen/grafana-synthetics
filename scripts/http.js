@@ -1,13 +1,13 @@
 import { group, sleep, check } from "k6";
 import http from "k6/http";
 
+
 export default function () {
   let params;
   let resp;
   let url;
 
   group("Default group", function () {
-    // Step 1: Get the home page
     params = {
       headers: {},
       cookies: {},
@@ -18,7 +18,6 @@ export default function () {
 
     check(resp, { "status equals 200": (r) => r.status === 200 });
 
-    // Step 2: Create a pizza
     params = {
       headers: {
         authorization: `Token Gck7WTaMAB9NKlM1`,
@@ -47,5 +46,9 @@ export default function () {
 
     check(resp, { "status equals 401": (r) => r.status === 401 });
   });
+
   sleep(1);
+
+
 }
+
